@@ -1,0 +1,214 @@
+:root {
+
+  --bg-dark: url("./images/bg-dark.png");
+  --bg-light: url("./images/bg-light.png");
+}
+
+.light-theme {
+  .App-header {
+    background-image: var(--bg-light);
+  }
+  .searchInput, .card{
+    background-color: #eadefc;
+    color: black;
+  }
+  .currentWeatherCard {
+    background-color: #eadefc;
+    .ant-typography {
+      color: black;
+    }
+  }
+  .currTemp {
+    color: black;
+    .ant-statistic-title{
+      color: black;
+    }
+    .ant-statistic-content {
+      color: #4a1d91;
+    }
+  }
+  .searchHistoryContainer {
+    background-color: #eadefc;
+    .ant-typography {
+      color: black;
+    }
+    .ant-card-head-title{
+      color:black;
+    }
+    .ant-list > .ant-spin-nested-loading > .ant-spin-container > .ant-list-items > .ant-list-item > .ant-list-item-meta > .ant-list-item-meta-content > .ant-list-item-meta-title{
+      color: black
+    }
+    .ant-list > .ant-spin-nested-loading > .ant-spin-container > .ant-list-items > .ant-list-item > .ant-list-item-meta > .ant-list-item-meta-content > .ant-list-item-meta-description{
+      color: black
+    }
+  }
+}
+
+.dark-theme {
+  .App-header {
+    background-image: var(--bg-dark);
+  }
+  .searchInput, .card{
+    background-color: #4a1d91;
+    color: white;
+  }
+  .currentWeatherCard {
+    background-color: #4a1d91;
+    .ant-typography {
+      color: white;
+    }
+  }
+  .currTemp {
+    color: white;
+    .ant-statistic-title,  .ant-statistic-content{
+      color: white
+    }
+  }
+  .searchHistoryContainer {
+    background-color: #4a1d91;
+    .ant-typography {
+      color: white;
+    }
+    .ant-card-head-title{
+      color:white;
+    }
+    .ant-list > .ant-spin-nested-loading > .ant-spin-container > .ant-list-items > .ant-list-item > .ant-list-item-meta > .ant-list-item-meta-content > .ant-list-item-meta-title{
+      color: white
+    }
+    .ant-list > .ant-spin-nested-loading > .ant-spin-container > .ant-list-items > .ant-list-item > .ant-list-item-meta > .ant-list-item-meta-content > .ant-list-item-meta-description{
+      color: white
+    }
+    
+  }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-image: url("./images/bg-dark.png"); */
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  padding-top: 100px;
+  height: 90vh;
+  text-align: center;
+}
+
+.spacer {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.searchInput {
+  border-color: transparent;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 100%
+}
+
+.ant-card-body{
+    height: 100%;
+}
+
+.weatherLogo {
+  height: 20%;
+  top: -15%;
+  right: -50%;
+  width: 55%;
+  position: relative;
+}
+
+.weatherImg {
+  width: auto;
+  height: 100%;
+}
+
+.currentWeatherBox {
+  height: 35%;
+  width: 100%;
+}
+
+.currTemp {
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-align:left;
+}
+
+.weatherBox {
+  width: 50%;
+  height: 100%;
+  float: right
+}
+
+
+.searchHistoryBox {
+  height: 65%;
+  width: 100%;
+}
+
+.searchHistoryContainer {
+  height: 95%;
+  width: 100%
+}
+
+.searchHistoryContainer > .ant-card-body {
+  overflow: auto;
+  height: 85%;
+}
+
+.spinContainer {
+  height: 100%;
+  width: 100%
+}
+
+.currentWeatherCard {
+  height: 100%;
+  width: 100%
+}
+
+.ant-list-item-meta-content {
+  text-align:left;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
